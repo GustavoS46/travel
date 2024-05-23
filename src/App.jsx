@@ -1,42 +1,42 @@
-import About from './components/About'
-import Contact from './components/Contact'
-import Destination from './components/Destination'
-import Features from './components/Features'
-import Footer from './components/Footer'
-import Home from './components/Home'
-import Navbar from './components/Navbar'
+import React from "react";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import Button from "./layouts/Button";
+import Plans from "./components/Plans";
+import About from "./components/About";
+import Trainers from "./components/Trainers";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
-function App() {
-
+const App = () => {
   return (
     <div>
       <Navbar />
 
       <main>
-        <div id='home'>
+        <div id="home">
           <Home />
         </div>
 
-        <div id='features'>
-          <Features />
+        <div id="plans">
+          <Plans />
         </div>
 
-        <div id='destination'>
-          <Destination />
-        </div>
-
-        <div id='about'>
+        <div id="about">
           <About />
         </div>
 
-        <div id='contact'>
+        <div id="trainers">
+          <Trainers />
+        </div>
+
+        <div id="contact">
           <Contact />
         </div>
       </main>
-
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
